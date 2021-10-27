@@ -8,4 +8,6 @@ while True:
         pyautogui.click(pyautogui.locateOnScreen("images/x_button.png"))
     if pyautogui.pixelMatchesColor(1224, 334, (236, 240, 241)) and pyautogui.pixelMatchesColor(1210, 337, (255, 255, 255)):
         pyautogui.click(1224, 334)
-        break
+        pyautogui.sleep(0.5)
+        pyautogui.click()
+        pyautogui.moveTo(500, 500)
